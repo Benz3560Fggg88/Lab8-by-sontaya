@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_8 Login by sontaya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            background-image: url('https://images.unsplash.com/photo-1707327259268-2741b50ef5e5?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.JPG');
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            height: 100%;
+        }
+ 
+        .main {
+            display: flex;
+            width: 1300px;   /* 1300 */
+            height: 750px;
+            margin: 55px auto;
+            background-color: aliceblue; 
+           /* border-radius: 30px; */
+            position: relative;
+            opacity: 0.9;
+            text-align: center;
+            border: 5px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+           /* box-shadow: 0px 50px 50px whitesmoke; */
+        }
+ 
+        .login-left {
+          /*  background-color: rgb(0, 0, 0); */
+          background-image: url('https://images.unsplash.com/photo-1707327259268-2741b50ef5e5?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.JPG');
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+ 
+        .login-left img {
+            border-radius: 50%;
+            margin: 10px;
+            border: 5px solid rgb(255, 255, 255);
+        }
+ 
+        .login-left h2 {
+            color: whitesmoke;
+            font-size: 150%;
+            margin: 20px;
+            /* border: 5px solid rgb(255, 255, 255); */
+ 
+        }
+ 
+        .login-left h1 {
+            color: rgb(0, 0, 0);
+            font-size: 300%;
+            position: absolute;
+            top: 10%;
+            padding: 20px;
+        }
+ 
+        .block {
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            color: blue;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .block :hover
+        {
+            color: #000000;
+            text-decoration: none;
+        }
+        .block:active
+        {
+            color: orchid;
+            text-decoration: none;
+ 
+        }
+       
+        .font-checkbox {
+            color: whitesmoke;
+            font-size: 13px;
+            padding: 5px;
+ 
+        }
+ 
+        .forgetpassword {
+            color: whitesmoke;
+            font-size: 13px;
+            padding: 5px;
+            padding-top: 20px;
+            text-decoration: none;
+        }
+ 
+        .botton {
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            background-color: rgb(25, 200, 159);
+            color: #000000;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+ 
+        .botton:hover {
+            color: rgb(74, 0, 143);
+        }
+ 
+        .login-right {
+            background-image: url('https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.JPG');
+           /* background: linear-gradient(120deg, purple, grey); */
+           color: whitesmoke;
+            width: 650px;
+            height: 800px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+ 
+        .login-right img {
+            position: absolute;
+            top: 9%;
+        }
+ 
+        .login-right h1 {
+            color: rgb(255, 255, 255);
+            font-size: 250%;
+            margin-top: 5px;
+        }
+ 
+        .login-right p {
+            padding: 10px;
+            margin: 20px auto;
+            font-size: 100%;
+ 
+        }
+ 
+        .link {
+ 
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 13%;
+            /* border: 1px solid black; */
+        }
+ 
+        .link a {
+            color: whitesmoke;
+            font-size: 13px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="main">
+        <div class="img">
+            <img src="">
+        </div>
+        <div class="login-left">
+            <h1>Login</h1>
+            <img src="https://images.unsplash.com/photo-1707327259268-2741b50ef5e5?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.JPG" width="150" height="150">
+            <h2>Sontaya Tajampa</h2>
+            <form action="/action_page.php">
+                <input type="email" class="block" placeholder="Email..."><br>
+                <input type="password" class="block" placeholder="Password..."><br>
+                <input type="submit" Class="botton" value="Login"><br><br>
+                <input type="checkbox" Class="checkbox" name="rememberuser" value="Remember me ?">
+                <label class="font-checkbox" for="checkbox">Remember me ?</label>
+                <a class="forgetpassword"
+                    href="https://www.google.com/webhp?hl=th&sa=X&ved=0ahUKEwjS9_uWzqeEAxVGXmwGHbByDc8QPAgJ"
+                    target="_blank">Forget password ?</a>
+ 
+            </form>
+        </div>
+        <div class="login-right">
+            
+            <h1> Travel around the world </h1>
+            <p>ขอให้เราเป็นความสุขกับการเดินทางของคุณ...</p>
+            <div class="link">
+                <a href="https://www.google.com/webhp?hl=th&sa=X&ved=0ahUKEwjS9_uWzqeEAxVGXmwGHbByDc8QPAgJ" /* ใส่linkเมื่อกด */
+                    target="_blank">เพิ่มเติม</a>
+                <a href="https://www.google.com/webhp?hl=th&sa=X&ved=0ahUKEwjS9_uWzqeEAxVGXmwGHbByDc8QPAgJ"  /* ใส่linkเมื่อกด */
+                    target="_blank">เงื่อนไขเกี่ยวข้อง</a>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+ 
+</html>
